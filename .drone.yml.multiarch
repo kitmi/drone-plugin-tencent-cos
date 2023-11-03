@@ -15,7 +15,7 @@ steps:
 - name: publish
   image: plugins/docker
   settings:
-    repo: kitmi/tencent-cos-plugin
+    repo: kitmi/drone-plugin-tencent-cos
     auto_tag: true
     auto_tag_suffix: linux-amd64
     dockerfile: docker/Dockerfile
@@ -27,7 +27,7 @@ steps:
 - name: publish_arm
   image: plugins/docker
   settings:
-    repo: kitmi/tencent-cos-plugin
+    repo: kitmi/drone-plugin-tencent-cos
     auto_tag: true
     auto_tag_suffix: linux-arm
     dockerfile: docker/Dockerfile.linux.arm
@@ -39,7 +39,7 @@ steps:
 - name: publish_arm
   image: plugins/docker
   settings:
-    repo: kitmi/tencent-cos-plugin
+    repo: kitmi/drone-plugin-tencent-cos
     auto_tag: true
     auto_tag_suffix: linux-arm64
     dockerfile: docker/Dockerfile.linux.arm64

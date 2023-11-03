@@ -6,5 +6,5 @@ ENV GODEBUG netdns=go
 
 COPY --from=alpine /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 
-ADD drone-plugin-tencent-cos /bin/
+ADD release/linux/arm64/plugin /bin/
 ENTRYPOINT ["/bin/plugin"]
